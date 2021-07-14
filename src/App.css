@@ -1,9 +1,10 @@
 .App {
-  text-align: center;
+  background-color: rgb(247, 247, 247);
+  overflow-x: hidden;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #08415C;
   min-height: 5vh;
   display: flex;
   flex-direction: column;
@@ -11,7 +12,8 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  margin-bottom: 1vh;
+  padding-bottom: 1vh;
+  text-align: center;
 }
 
 .App-header div{
@@ -28,5 +30,85 @@
 }
 
 .App-body{
-  background-color: rgb(219, 219, 219);
+  color: #1f1f1f;
+  min-width: 80vw;
+  max-width: 80vw;
+  margin-left: 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.App-body p{
+  text-align: center;
+}
+.App-body h1{
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.Row1{
+  display: flex;
+  padding: 1vw;
+  justify-content: space-between;
+}
+
+.Row-item-primary{
+  min-width: 48%;
+  max-width: 48%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.Row-item-secondary{
+  min-width: 48%;
+  max-width: 48%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.List-segragation{
+  display: flex;
+  flex-direction: row;
+}
+
+.Edu-cards{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .Header-details{
+    flex-direction: column;
+  }
+
+  .App-body{
+    min-width: 90vw;
+    max-width: 90vw;
+    margin-left: 5vw;
+  }
+
+  .Row1{
+    flex-direction: column;
+  }
+
+  .Row-item-primary{
+    margin-top:1vh;
+    max-width: 100%;
+    margin-bottom: 3vh;
+  }
+  .Row-item-secondary{
+    max-width: 100%;
+  }
+
+  .Row-item-secondary p{
+    max-width: 95%;
+  }
+
 }

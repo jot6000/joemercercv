@@ -1,0 +1,43 @@
+.Card{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    min-width: 20vw;
+    margin: 1vw;
+    height: 100%;
+}
+
+.Card header{
+    display: flex;
+    justify-content: space-between;
+    color: whitesmoke;
+    padding: 1%;
+}
+
+.Card header h3{
+    margin: 0;
+    padding: 0;
+}
+.Card header h5{
+    margin: 0;
+    padding: 0;
+}
+
+.Card body{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    min-width: 100%;
+}
+
+.Grade{
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .Card{
+        min-width: 90%;
+        max-width: 90%;
+    }
+  
+}
