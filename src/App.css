@@ -53,8 +53,8 @@
 }
 
 .Row-item-primary{
-  min-width: 48%;
-  max-width: 48%;
+  min-width: 30%;
+  max-width: 30%;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -62,13 +62,14 @@
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 .Row-item-secondary{
-  min-width: 48%;
-  max-width: 48%;
+  min-width: 35%;
+  max-width: 35%;
   background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 10px;
 }
 
 .Climbing-container{

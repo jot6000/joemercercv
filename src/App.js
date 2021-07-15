@@ -58,26 +58,56 @@ function App() {
               Personal Statement
             </h1>
             <p>
-              I have decided since working as a software engineer delivering Kofax and RPA solutions, that my passion does not lie in business automation. After an attempt to get a project off the ground with some friends and multiple personal projects I have found my passion lies in the realm of web dev. Until now I have been using react to create websites, but I would be willing to transfer those skills to another framework such as angular or Vue if needed.
+            Working independently, as a leader, or as an employee, I always give my all to achieve the desired goal. Throughout my working life I have been able to take on heavy workloads and still achieve high standard results consistently. A trait I am very proud of. From working in a range of environments I have had plenty of opportunities to refine my communication and team working skills. Which I feel creates the foundations of any professional relationships. My time working in industry and on startups has allowed me to gain a healthy amount of knowledge in a variety of different technical environments. Which has allowed me to quickly adapt when moving between tech stacks or job roles.
             </p>
           </div>
-        </div>
+          <div className="Row-item-primary">
+            <h1>
+              Soft skills
+            </h1>
+            <div className="List-segragation">
+              <ul>
+                <li>Adaptive</li>
+                <li>Communication</li>
+                <li>Cooperation</li>
+                <li>Creativity</li>
+                <li>Dependability</li>
+                <li>Handling pressure</li>
+                <li>Leadership</li>
+                <li>Organisation/Planning</li>
+                <li>Problem-solving</li>
+                <li>Time Keeping</li>   
+              </ul>               
+            </div>
+          </div>
+        </div>       
         <h1>
           Education
         </h1>
         <div className="Edu-cards">
-          <EducationCard title="Kapow 10 Technical Solutions Specialist" grade="Pass" location="Kofax" time ="2017" headColor="#388697"/>
-          <EducationCard title="RPA Developer Foundation Diploma" grade="Pass" location="UI Path" time ="2017" headColor="#388697"/>
+          <EducationCard title="Kapow 10 Technical Solutions Specialist" grade="Certified" location="Kofax" time ="2017" headColor="#388697"/>
+          <EducationCard title="RPA Developer Foundation Diploma" grade="Certified" location="UI Path" time ="2017" headColor="#388697"/>
           <EducationCard title="Level 5 HND (Games Dev)" grade="Distinction" location="Uxbridge college" time ="Oct 2015 - Jul 2017" headColor="#388697"/>
           <EducationCard title="Level 3 BTEC (Games Dev)" grade="Distinction*, Distinction, Distinction" location="Uxbridge college" time ="Sept 2013 - Jun 2015" headColor="#388697"/>
-          <EducationCard title="GCSE's" grade="10 GCSE's A-C" location="Chalfont Community College" time ="sept 2013 - Jun 2015" headColor="#388697"/>
+          <EducationCard title="GCSEs" grade="10 GCSEs A-C" location="Chalfont Community College" time ="Sept 2011 - Jun 2013" headColor="#388697"/>
         </div>
         <h1>
           Work Experience
         </h1>
         <div className="Edu-cards">
-          <WorkCard title="@Home Pizza" about="Delivery Driver" time ="Sept 2018 - Now" headColor="#388697"/>
-          <WorkCard title="Hermes" about="Courier" time ="Jan 2020 - Jun 2021" headColor="#388697"/>
+          <WorkCard title="@Home Pizza" about={<ul>
+            <h4>Delivery Driver</h4>
+            <div>Responsibilities:</div>
+            <li>Delivering pizza in a timely and professional manner.</li>
+            <li>Professionally and politely take orders.</li>
+            </ul>} time ="Sept 2018 - Now" headColor="#388697"/>
+          <WorkCard title="Hermes" about={<ul>
+            <h4>Courier</h4>
+            <div>Responsibilities:</div>
+            <li>Delivering parcels with tight daily deadlines.</li>
+            <li>Managing my daily schedule.</li>
+            <li>Building positive relationships with the customers.</li>
+            </ul>} time ="Jan 2020 - Jun 2021" headColor="#388697"/>
           <WorkCard title="DCS" about={<ul>
             <h4>Software Engineer</h4>
             <div>Responsibilities:</div>
@@ -89,12 +119,13 @@ function App() {
             <li>Software and hardware installations for clients.</li>
             <li>Deploying databases.</li>
             </ul>} time ="Oct 2017 - Oct 2018" headColor="#388697"/>
-          <WorkCard title="Britania Parking" about="Parking Officer" time ="Sept 2016 - Oct 2017" headColor="#388697"/>
-          <WorkCard title="Dominoes" about="Customer Service Representative" time ="Feb 2014 - Aug 2016" headColor="#388697"/>
+          <WorkCard title="Britannia Parking" about={<h4>Parking Officer</h4>} time ="Sept 2016 - Oct 2017" headColor="#388697"/>
+          <WorkCard title="Dominoe's" about={<h4>Customer Service Representative</h4>} time ="Feb 2014 - Aug 2016" headColor="#388697"/>
         </div>
         <h1>
           About Me
         </h1>
+        <p>For the most part, I am a man who is addicted to hobbies, so I figure i'll just tell you about a couple of them below.</p>
         <div className="Climbing-container">
           <article>
             <h2>Rock Climber</h2>
