@@ -71,6 +71,41 @@
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
+.Climbing-container{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+img{
+  height: 300px;
+}
+
+.Climbing-container article{
+  max-width: 60%;
+}
+
+
+.Climbing-container p{
+  text-align: left;
+}
+
+.Chess-container{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Chess-container article{
+  max-width: 60%;
+}
+
+.Chess-container h2{
+  text-align: right;
+}
+
+.Chess-container p{
+  text-align: right;
+}
+
 .List-segragation{
   display: flex;
   flex-direction: row;
@@ -87,6 +122,41 @@
   .Header-details{
     flex-direction: column;
   }
+
+  .Climbing-container{
+    flex-direction: column;
+  }
+
+  .Chess-container{
+    flex-direction: column;
+  }
+
+  .Climbing-container article{
+    max-width: 90%;
+    margin-left: 5%;
+  }
+
+  .Chess-container article{
+    max-width: 90%;
+    margin-left: 5%;
+  }
+
+  .Climbing-container p{
+    text-align: center;
+  }
+
+  .Chess-container p{
+    text-align: center;
+  }
+
+  .Climbing-container h2{
+    text-align: center;
+  }
+
+  .Chess-container h2{
+    text-align: center;
+  }
+  
 
   .App-body{
     min-width: 90vw;

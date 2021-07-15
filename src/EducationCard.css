@@ -12,12 +12,25 @@
     color: whitesmoke;
     padding: 1%;
 }
-
+.Card header h2{
+    margin: 0;
+    padding: 0;
+}
 .Card header h3{
     margin: 0;
     padding: 0;
 }
 .Card header h5{
+    margin: 0;
+    padding: 0;
+}
+
+.About ul{
+    text-align: left;
+}
+
+ul h4{
+    text-align: center;
     margin: 0;
     padding: 0;
 }
