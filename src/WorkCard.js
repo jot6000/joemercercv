@@ -1,22 +1,43 @@
 import './EducationCard.css';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
-class WorkCard extends React.Component{
-    constructor(props) {
-        super(props);
-        this.state = {};
-      }
-    render(){
-        return(
-            <div className="Card">
-                <header style={{backgroundColor:this.props.headColor}}>
-                    <h2>{this.props.title}</h2>
-                    <h5>{this.props.time}</h5>                  
-                </header>
-                <p className="About">{this.props.about}</p>
-            </div>
-        )
+
+//title
+//time
+//children
+
+
+export default function WorkCard(props){
+    const [open,setopen] = useState(false)
+
+    let frame = React.useRef();
+    let header = React.useRef();
+    let hiddenContent = React.useRef(null);
+
+    if(frame.current){
+        frame.current.style.height = `${header.current.clientHeight}px`;
     }
-}
 
-export default WorkCard;
+    useEffect(()=>{
+        if(open){
+            frame.current.style.height = `${header.current.clientHeight + hiddenContent.current.clientHeight + 40}px`;
+        }
+        else{
+            frame.current.style.height = `${header.current.clientHeight}px`;
+        }
+    },[open])
+
+    return(
+        <>
+            <div className='work-card' ref={frame}>
+                <header onClick={()=>setopen(!open)} ref={header}>
+                    <h2>{props.title}</h2>
+                    <h4>{props.time}</h4>
+                </header>
+                <section ref={hiddenContent}>{props.children}</section>
+                
+            </div>
+            <div className='splitter'/>
+        </>
+    )
+}

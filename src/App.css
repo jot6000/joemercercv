@@ -1,10 +1,32 @@
+.App-header a{
+  color: white;
+}
+
 .App {
-  background-color: rgb(247, 247, 247);
   overflow-x: hidden;
+  color: rgba(2, 20, 34, 0.911);
+}
+
+article{
+  width: 80vw;
+  padding: 15pt 10vw;
+  margin: 0pt;
+}
+
+article:nth-of-type(odd){
+  background-color: rgb(233, 233, 233);
+  
+}
+
+article:nth-of-type(even){
+  background-color: rgb(244, 244, 244);
 }
 
 .App-header {
+  background-image: url("./images/code.jpg");
+  background-size: cover;
   background-color: #08415C;
+  background-blend-mode: multiply;
   min-height: 5vh;
   display: flex;
   flex-direction: column;
@@ -18,6 +40,16 @@
 
 .App-header div{
   font-size: calc(10px + 1vmin);
+  flex: 1;
+}
+
+.App-header a{
+  font-size: calc(10px + 1vmin);
+  flex: 1;
+}
+
+.App-header h1{
+  margin-top: 0pt;
 }
 
 .Header-details{
@@ -25,25 +57,27 @@
   min-width: 100vw;
 }
 
-.Header-details div{
-  flex: 1;
+.profile-img{
+  border-radius: 450pt;
+  border: 4px solid white;
+  margin-top: 10pt;
+  width: 120px;
+  height: 120px;
 }
 
 .App-body{
   color: #1f1f1f;
-  min-width: 80vw;
-  max-width: 80vw;
-  margin-left: 10vw;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .App-body p{
   text-align: center;
 }
-.App-body h1{
+
+article > h1{
   text-align: center;
-  margin-bottom: 0;
 }
 
 .Row1{
@@ -52,7 +86,7 @@
   justify-content: space-between;
 }
 
-.Row-item-primary{
+.card{
   min-width: 30%;
   max-width: 30%;
   background-color: white;
@@ -61,14 +95,9 @@
   align-items: center;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
-.Row-item-secondary{
+.wide{
   min-width: 35%;
   max-width: 35%;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   padding: 10px;
 }
 
@@ -78,13 +107,13 @@
 }
 
 img{
-  height: 300px;
+  width: 300px;
+  height: auto;
 }
 
 .Climbing-container article{
   max-width: 60%;
 }
-
 
 .Climbing-container p{
   text-align: left;
@@ -112,24 +141,25 @@ img{
   flex-direction: row;
 }
 
-.Edu-cards{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+.edu-card{
+  min-width: 80vw;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   .Header-details{
     flex-direction: column;
   }
 
   .Climbing-container{
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .Chess-container{
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .Climbing-container article{
@@ -169,16 +199,16 @@ img{
     flex-direction: column;
   }
 
-  .Row-item-primary{
+  .card{
     margin-top:1vh;
     max-width: 100%;
     margin-bottom: 3vh;
   }
-  .Row-item-secondary{
+  .wide{
     max-width: 100%;
   }
 
-  .Row-item-secondary p{
+  .wide p{
     max-width: 95%;
   }
 
