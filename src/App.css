@@ -3,8 +3,23 @@
 }
 
 .App {
-  background-color: rgb(247, 247, 247);
   overflow-x: hidden;
+  color: rgba(2, 20, 34, 0.911);
+}
+
+article{
+  width: 80vw;
+  padding: 15pt 10vw;
+  margin: 0pt;
+}
+
+article:nth-of-type(odd){
+  background-color: rgb(233, 233, 233);
+  
+}
+
+article:nth-of-type(even){
+  background-color: rgb(244, 244, 244);
 }
 
 .App-header {
@@ -25,6 +40,12 @@
 
 .App-header div{
   font-size: calc(10px + 1vmin);
+  flex: 1;
+}
+
+.App-header a{
+  font-size: calc(10px + 1vmin);
+  flex: 1;
 }
 
 .App-header h1{
@@ -34,7 +55,6 @@
 .Header-details{
   display: flex;
   min-width: 100vw;
-  justify-content: space-around;
 }
 
 .profile-img{
@@ -47,19 +67,17 @@
 
 .App-body{
   color: #1f1f1f;
-  min-width: 80vw;
-  max-width: 80vw;
-  margin-left: 10vw;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .App-body p{
   text-align: center;
 }
-.App-body h1{
+
+article > h1{
   text-align: center;
-  margin-bottom: 0;
 }
 
 .Row1{
@@ -89,13 +107,13 @@
 }
 
 img{
-  height: 300px;
+  width: 300px;
+  height: auto;
 }
 
 .Climbing-container article{
   max-width: 60%;
 }
-
 
 .Climbing-container p{
   text-align: left;
@@ -123,24 +141,25 @@ img{
   flex-direction: row;
 }
 
-.Edu-cards{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+.edu-card{
+  min-width: 80vw;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   .Header-details{
     flex-direction: column;
   }
 
   .Climbing-container{
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .Chess-container{
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .Climbing-container article{

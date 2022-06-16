@@ -15,20 +15,21 @@ export default function SkilsAndStatement(props){
                 <li>Node.js</li>
                 <li>Visual Basic</li>
                 <li>C++</li>
-                <li>C#</li>
-                <li>CI/CD</li>
-              </ul>
-              <ul>
+                <li>C#</li>                
                 <li>Unity</li>
                 <li>Unreal Engine</li>
                 <li>Maya</li>
                 <li>Kofax Capture</li>
                 <li>Kofax KTM</li>
+              </ul>
+              <ul>                
                 <li>UIpath</li>
                 <li>Kapow</li>
                 <li>SQL</li>
                 <li>Xamarin Forms</li>
                 <li>Jest</li>
+                <li>Cypress</li>
+                <li>CI/CD</li>
               </ul>
             </div>
           </div>
@@ -37,7 +38,10 @@ export default function SkilsAndStatement(props){
               Personal Statement
             </h1>
             <p>
-              Working independently, as a leader, or as an employee, I always give my all to achieve the desired goal. Throughout my working life I have been able to take on heavy workloads and still achieve high standard results consistently. A trait I am very proud of. From working in a range of environments I have had plenty of opportunities to refine my communication and team working skills. Which I feel creates the foundations of any professional relationships. My time working in industry and on startups has allowed me to gain a healthy amount of knowledge in a variety of different technical environments. Which has allowed me to quickly adapt when moving between tech stacks or job roles.
+              Throughout my time in agile startups, and teaching I have racked up a good understanding and a lot of millage with React.js. Having built and delivered a working Point of Sale system using the mern stack (mostly working on the front end but also having designed a lot of the systems involved). This web application is currently used by @homePizza for its day-to-day operations. The project taught me the value of test-driven development and gave me experience with both Jest and Cypress for Unit and Integration testing.
+            </p>
+            <p>
+              Teaching at Uxbridge college I primarily covered the FARM stack with our T-Level students. This experience of trying to teach the key skills to students in a short time frame also helped round out my experience in full-stack development.
             </p>
           </div>
           <div className="card">
@@ -56,10 +60,10 @@ export default function SkilsAndStatement(props){
                 <li>Organisation/Planning</li>
                 <li>Problem-solving</li>
                 <li>Time Keeping</li>
-                <li>Teaching</li>   
+                <li>Teaching</li>
               </ul>
             </div>
           </div>
-        </div> 
+        </div>
     )
 }

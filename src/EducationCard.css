@@ -1,26 +1,29 @@
 .Card{
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    min-width: 20vw;
-    margin: 1vw;
+    min-width: 60vw;
     height: 100%;
+    margin-bottom: 8pt;
+    display: flex;
+}
+.Card img{
+    height: 50pt;
+    width: auto;
+    mix-blend-mode: multiply;
+    margin-right: 5pt;
 }
 
-.Card header{
-    display: flex;
-    justify-content: space-between;
-    color: whitesmoke;
-    padding: 1%;
+.Card>div{
+    width: calc(100% - 50px);
 }
-.Card header h2{
+
+.Card h2{
     margin: 0;
     padding: 0;
 }
-.Card header h3{
+.Card h3{
     margin: 0;
     padding: 0;
 }
-.Card header h5{
+.Card h5{
     margin: 0;
     padding: 0;
 }
@@ -35,22 +38,88 @@ ul h4{
     padding: 0;
 }
 
-.Card body{
+.Card .heading{
     display: flex;
-    flex-direction: column;
-    align-content: center;
-    text-align: center;
-    min-width: 100%;
+    width: 100%;
 }
 
-.Grade{
-    text-align: center;
+.Card .heading h2:first-of-type{
+    flex: 1;
 }
 
-@media only screen and (max-width: 600px) {
+.Card h5{
+    margin-right: 20pt;
+    text-align: right;
+    flex:1;
+}
+
+.work-card{
+    width: 80%;
+    margin-left: 10%;
+    overflow: hidden;
+    transition: 300ms;
+}
+
+.work-card header{
+    display: flex;
+    transition: 250ms ease-in-out;
+    cursor: pointer;
+}
+
+.work-card header:hover{
+    color: rgb(69, 98, 141);;
+    font-size: 1.1rem;
+}
+
+.work-card header h2{
+    flex: 1;
+}
+
+.splitter{
+    height: 1px;
+    background-color: rgba(128, 128, 128, 0.363);
+    width: 70%;
+    margin-left: 15%;
+}
+
+.grade-wide{
+    display: block;
+    color: rgb(69, 98, 141);
+}
+
+.grade-thin{
+    display: none;
+    color: rgb(69, 98, 141);
+}
+
+
+@media only screen and (max-width: 900px) {
     .Card{
-        min-width: 90%;
-        max-width: 90%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 40pt;
+    }
+    .work-card{
+        width: 100%;
+        margin-left: 0%;
+    }
+    .work-card header:hover{
+        color: rgba(2, 20, 34, 0.911);
+        font-size: 1rem;
+    }
+    .work-card header{
+        flex-direction: column;
+    }
+    .grade-wide{
+        display: none;
+        color: rgb(69, 98, 141);
+    }
+    
+    .grade-thin{
+        display: block;
+        color: rgb(69, 98, 141);
     }
   
 }

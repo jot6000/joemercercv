@@ -11,6 +11,9 @@ export default function Heading(){
                 <div>
                     joemercer50@googlemail.co.uk
                 </div>
+                <div>
+                    07824 558 018
+                </div>
                 <a href="https://github.com/jot6000">
                     Github
                 </a>
